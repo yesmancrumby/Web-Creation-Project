@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Pomodoro Timer</title>
+    </head>
+    <body>
+        <div id="audioSettings">
+            <fieldset>
+                <legend> Choose your vibe </legend>
+                <input type="radio" id="music1" name="music" value="music1" checked>
+                <label for="music1"> Music 1 <label> <br>
+                <input type="radio" id="music2" name="music" value="music2">
+                <label for="music2"> Music 2 <label> <br>
+                <input type="radio" id="music3" name="music" value="music3">
+                <label for="music3"> Music 3 <label> <br> 
+                
+                <legend> Volume</legend>
+                <input type="range" id="volume_control" name="volume_control" step="1" min="0" max="100" value="100"
+            </fieldset>
+        </div>
+        <br> <br>
+        <div id="bgSettings">
+            <fieldset>
+                <legend> Choose your background</legend>
+                <input type="radio" id="bg1" name="background" value="bg1" checked>
+                <label for="bg1"> Background 1 <label> <br>
+                <input type="radio" id="bg2" name="background" value="bg2">
+                <label for="bg2"> Background 2 <label> <br>
+                <input type="radio" id="bg3" name="background" value="bg3">
+                <label for="bg3"> Background 3 <label> <br>
+            </fieldset>
+        </div>
+        <br> <br>
+        <div id="taskSetting">
+            <fieldset>
+                <legend> What do you want to finish today?</legend>
+                <input type="checkbox" id="task_1_checkbox">
+                <input type="text" id="task_1" placeholder="">
+                <br> <br>
+                <input type="checkbox" id="task_2_checkbox">
+                <input type="text" id="task_2" placeholder="">
+                <br> <br>
+                <input type="checkbox" id="task_3_checkbox">
+                <input type="text" id="task_3" placeholder="">
+                <br><br>
+                <input type="button" id="addTask" value="+">
+            </fieldset>
+            <br><br>
+            <div id="subTask">
+                <!--Subtask add in taskbutton event-->
+            </div>
+        </div>
+         
+        <div id="timerSetting">
+            <fieldset>
+                <legend> How long do you want to work?</legend>
+                <input type="range" id="workTime" name="workTime" step="5" min="5" max="240" value="20">
+                <span id="workTimedisplay" name>20</span> Minutes
+                <br> 
+                <legend> Rest Time</legend>
+                <input type="range" id="restTime" name="restTime" step="1" min="1" max="120" value="15">
+                <span id="restTimedisplay" name="restTime">15 </span> minutes
+            </fieldset>
+        </div> 
+</body>
+</html>
